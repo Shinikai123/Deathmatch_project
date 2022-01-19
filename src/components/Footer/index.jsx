@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className={s.footer} >
                     <p>THANKS FOR VISITING</p>
                     <p>© ItechArt ReactJS Lab 2021.</p>
-					<p>  Михайлов Андрей</p>
+					<p>  Mihajlov Andrew</p>
                 </div>
             </div>            
 

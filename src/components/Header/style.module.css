@@ -1,8 +1,17 @@
+
+@font-face {
+	font-family: 'MyFont';
+	src: url(../../fonts/Japanese_3017.ttf);
+}
+
+
 .wrapper{
+	font-family: 'MyFont';
 	min-height: 10vh;
 	display:flex;
 	flex-direction: column;
-	background-color: #5b2e82;
+	background: url(../../assets/BG.jpg);
+    background-size: cover;
 }
 
 .header_body{
@@ -16,7 +25,7 @@
 }
 
 .title{
-	font-size: 50px;
+	font-size: 3.125em;
 	margin: 20px;
 }
 
@@ -26,12 +35,13 @@
 	display:flex;
 }
 
+
 .nav_item{
 	margin: 0 0 0 auto;
 	font-size: 20px;
 	display:flex;
-	max-width: 600px;
-	max-height: 100px;
+	max-width: 10vw;
+	max-height: 10vh;
 	text-align: center;
 }
 
@@ -39,10 +49,10 @@
 	display: inline-block;
 	vertical-align: center;
 	text-align: center;
-	max-width: 150px;
+	max-width: 10vw;
 	margin: 20px 0px 10px 1px;
-	background-color: #5b2e82;
-	color: white;
+	background: rgb(202, 52, 35);
+	color: black;
 	border: 1px solid grey;
 	padding: 20px;
 	font-size: 14px;
@@ -56,10 +66,10 @@
 	display: inline-block;
 	vertical-align: center;
 	text-align: center;
-	max-width: 150px;
+	max-width: 6vw;
 	margin: 20px 0px 10px 1px;
-	background-color: #5b2e82;
-	color: white;
+	background: rgb(202, 52, 35);
+	color: black;
 	border: 1px solid grey;
 	padding: 20px;
 	font-size: 14px;
@@ -73,10 +83,10 @@
 	display: inline-block;
 	vertical-align: center;
 	text-align: center;
-	max-width: 150px;
+	max-width: 6vw;
 	margin: 20px 20px 10px 1px;
-	background-color: #5b2e82;
-	color: white;
+	background: rgb(202, 52, 35);
+	color: black;
 	border: 1px solid grey;
 	padding: 20px;
 	font-size: 14px;
@@ -87,26 +97,12 @@
 
 
  .logo{
-	width: 100px;
-	height: 100px;
- }
- \\\
- .button:hover {
-	background-color: #111;
-	color: white;
+	max-width: 10vw;;
+	max-height: 10vh;
  }
 
- .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+.logo img{
+	width:100%;
+	max-width: 100%;
 }
+ 

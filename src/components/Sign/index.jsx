@@ -12,9 +12,9 @@ const Reg = () => {
     const [nicknameDirty, setNicknameDirty] = useState(false)
     const [emailDirty, setEmailDirty] = useState(false)
     const [passwordDirty, setPasswordDirty] = useState(false)
-    const [nicknameError, setNicknameError] = useState('Никнейм не должен быть пустым')
-    const [emailError, setEmailError] = useState('Емейл не должен быть пустым')
-    const [passwordError, setPasswordError] = useState('Пароль не должен быть пустым')
+    const [nicknameError, setNicknameError] = useState('*Никнейм не должен быть пустым')
+    const [emailError, setEmailError] = useState('*Емейл не должен быть пустым')
+    const [passwordError, setPasswordError] = useState('*Пароль не должен быть пустым')
     const [formValid, setFormValid] = useState(false)
 
     useEffect(() =>{
@@ -29,7 +29,7 @@ const Reg = () => {
     const nicknameHandler = (e) => {
         setNickname(e.target.value)
         if (e.target.value.length < 4 || e.target.value.length > 16) {
-            setNicknameError('Никнейм должен быть длиннее 3 и короче 16')
+            setNicknameError('*Никнейм должен быть длиннее 3 и короче 16')
         } else {
             setNicknameError('')
         }
@@ -40,7 +40,7 @@ const Reg = () => {
         setEmail(e.target.value)
         const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         if(!re.test(String(e.target.value).toLowerCase())) {
-            setEmailError('Некорректный адрес эл.почты')
+            setEmailError('*Некорректный адрес эл.почты')
         } else {
             setEmailError("")
         }
@@ -50,10 +50,10 @@ const Reg = () => {
     const passwordHandler = (e) => {
         setPassword(e.target.value)
         if (!e.target.value) {
-            setPasswordError('Пароль не должен быть пустым')
+            setPasswordError('*Пароль не должен быть пустым')
         }
         if (e.target.value.length < 4 || e.target.value.length > 16) {
-            setPasswordError('Пароль должен быть длиннее 3 и короче 16')
+            setPasswordError('*Пароль должен быть длиннее 3 и короче 16')
         } else {
             setPasswordError('')
         }

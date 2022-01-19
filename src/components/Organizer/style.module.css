@@ -1,12 +1,21 @@
+
+@font-face {
+	font-family: 'MyFont';
+	src: url(../../fonts/Japanese_3017.ttf);
+}
+
+
 .wrapper{
     display: flex;
     justify-content: space-around;
-	background: rgb(91,46,130);
+    background: url(../../assets/BG.jpg);
+    background-size: cover;
     min-height: 90vh;
 }
 
 
 .organizer {
+    font-family: 'MyFont';
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -16,7 +25,8 @@
     border-radius: 20px;
     box-sizing: border-box;
     padding: 20px;
-    width: 600px;
+    width: 36vw;
+    height: 65vh;
     margin: 100px 10px 10px 10px; 
     position: absolute;
 }
@@ -26,12 +36,13 @@
 }
 
 .input_string{
-    background-color: #5b2e82;
+    font-family: 'MyFont';
+    background: rgb(202, 52, 35);
     border-radius: 20px;
     border: 0;
     box-sizing: border-box;
 	margin: 0px 20px 20px 10px;
-    color: white;
+    color: black;
     font-size: 18px;
     height: 50px;
     outline: 0;
@@ -40,11 +51,12 @@
 }
 
 .input_button{
-    background-color:#5b2e82;
+    font-family: 'MyFont';
+    background: rgb(202, 52, 35);
     border-radius: 20px;
     border: 0;
     box-sizing: border-box;
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     height: 50px;

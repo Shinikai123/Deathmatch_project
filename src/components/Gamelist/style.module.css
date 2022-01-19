@@ -1,12 +1,22 @@
+.GamelistItem{
+    display: inline;
+}
+@font-face {
+	font-family: 'MyFont';
+	src: url(../../fonts/Japanese_3017.ttf);
+}
+
 .wrapper{
     display: flex;
     justify-content: center;
     text-align: center;
-	background: rgb(91,46,130);
+    background: url(../../assets/BG.jpg);
+    background-size: cover;
     min-height: 90vh;
 }
 
 .gamelist{
+    font-family: 'MyFont';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +25,8 @@
     border-radius: 20px;
     box-sizing: border-box;
     padding: 20px;
-    width: 600px;
+    width: 60vw;
+    height: auto;
     margin-top: 100px; 
     position: absolute;
 }
