@@ -11,7 +11,7 @@ const Header = () => {
 				<nav className={s.header_nav}>
 				<img src ={Logo} alt= "logo" className={s.logo} />
 					<div className={s.nav_item}>
-						<Link to="/" className={s.nav_button_first}>MAIN PAGE</Link>
+						<Link to="/home" className={s.nav_button_first}>HOME</Link>
 					</div>
 
 
@@ -36,7 +36,7 @@ const Header = () => {
 					
 
 					<div className={s.nav_item}>
-						<Link to={"/sign"} className={s.nav_button_last}>SIGN IN/UP</Link>
+						<Link to={"/reg"} className={s.nav_button_last}>SIGN UP</Link>
 					</div>
 				</nav>
 				</div>

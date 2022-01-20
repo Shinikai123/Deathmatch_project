@@ -31,73 +31,52 @@
 
 .header_nav{
 	margin: 0 0 0 auto;
-	font-size: 20px;
+	font-size: 30px;
 	display:flex;
 }
 
 
 .nav_item{
-	margin: 0 0 0 auto;
-	font-size: 20px;
-	display:flex;
+	margin: auto;
 	max-width: 10vw;
 	max-height: 10vh;
 	text-align: center;
 }
 
-.nav_button{
-	display: inline-block;
-	vertical-align: center;
-	text-align: center;
-	max-width: 10vw;
-	margin: 20px 0px 10px 1px;
+.nav_button_first{
+	border-radius: 20px 0 0 20px;
+	border: 1px solid grey;
+	border-radius: 10px, 0px, 0px, 10px;
 	background: rgb(202, 52, 35);
 	color: black;
-	border: 1px solid grey;
-	padding: 20px;
-	font-size: 14px;
-	text-transform: uppercase;
-	text-decoration: none;
-	cursor: pointer;
+	padding: 12px;
+	margin: 0 0 0 auto;
+	text-transform: none;
 }
 
-.nav_button_first{
-	border-radius: 10px 0 0 10px;
-	display: inline-block;
-	vertical-align: center;
-	text-align: center;
-	max-width: 6vw;
-	margin: 20px 0px 10px 1px;
+.nav_button{
 	background: rgb(202, 52, 35);
 	color: black;
 	border: 1px solid grey;
-	padding: 20px;
-	font-size: 14px;
-	text-transform: uppercase;
-	text-decoration: none;
-	cursor: pointer;
+	padding: 12px;
+	text-transform: none;
 }
+
 
 .nav_button_last{
-	border-radius: 0 10px 10px 0;
-	display: inline-block;
-	vertical-align: center;
-	text-align: center;
-	max-width: 6vw;
-	margin: 20px 20px 10px 1px;
+	border-radius: 0 20px 20px 0;
+	margin-right: 20px;
 	background: rgb(202, 52, 35);
 	color: black;
 	border: 1px solid grey;
-	padding: 20px;
-	font-size: 14px;
-	text-transform: uppercase;
-	text-decoration: none;
-	cursor: pointer;
+	padding: 12px;
+	text-transform: none;
 }
 
 
  .logo{
-	max-width: 10vw;;
+	margin: auto 10px auto auto;
+	max-width: 10vw;
 	max-height: 10vh;
  }
 
