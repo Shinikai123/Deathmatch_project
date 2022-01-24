@@ -1,45 +1,13 @@
-
 @font-face {
 	font-family: 'MyFont';
 	src: url(../../fonts/Japanese_3017.ttf);
 }
 
-
 .wrapper{
-    display: flex;
-    justify-content: space-around;
-    background: url(../../assets/BG.jpg);
-    background-size: cover;
-    min-height: 90vh;
-}
-
-.dashboard_container{
     font-family: 'MyFont';
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color:#111;
-	color: white;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 20px;
-    width: 60vw;
-    height: auto;
-    margin-top: 100px; 
-    position: absolute;
-}
-
-.dashboard_button{
-    font-family: 'MyFont';
-    background: rgb(202, 52, 35);
-    border-radius: 20px;
-    border: 0;
-    box-sizing: border-box;
-    color: black;
-    cursor: pointer;
-    font-size: 18px;
-    height: 50px;
-    margin: 80px 1% 0;
-    width: 48%;
-    text-align: center;
+    background: url(../../assets/BG.jpg);
+    background-size: cover;
 }

@@ -23,9 +23,14 @@
 	color: white;
     border-radius: 20px;
     box-sizing: border-box;
+    font-size: 14px;
     padding: 20px;
     width: 36vw;
     height: 65vh;
     margin-top: 100px; 
     position: absolute;
+}
+
+.title{
+    font-size: 24px;
 }

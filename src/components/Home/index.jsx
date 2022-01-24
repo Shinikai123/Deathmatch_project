@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div className={s.wrapper}>
             <div className={s.greetings}>
-                <h1>Welcome to the main page of Deathmatch App!</h1>
+                <h1 className={s.title}>Welcome to the main page of Deathmatch App!</h1>
                 <article>
                 <p>You can participate in this project both as an organizer and player</p>
                 Organizer:

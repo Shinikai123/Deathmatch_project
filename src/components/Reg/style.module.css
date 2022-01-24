@@ -1,4 +1,3 @@
-
 @font-face {
 	font-family: 'MyFont';
 	src: url(../../fonts/Japanese_3017.ttf);
@@ -6,34 +5,50 @@
 
 
 .wrapper{
+    font-family: 'MyFont';
+    min-height: 90vh;
+    max-height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background: url(../../assets/BG.jpg);
     background-size: cover;
-    min-height: 90vh;
 }
 
-s.reg_container{
-    font-family: 'MyFont';
+.reg{
+    flex-direction: column;
+    background-color: black;
+    color: white;
     margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    height: auto;
+    width: 36vw;
+    border-radius: 20px;
+    box-sizing: border-box;
+
 }
 
+.reg_container{
+    justify-content: space-around;
+}
 
 .reg_string{
-    font-family: 'MyFont';
-    background: rgb(202, 52, 35);
-    border-radius: 20px;
-    border: 0;
-    box-sizing: border-box;
-	margin: 0px 20px 20px 10px;
     color: black;
+    background: rgb(202, 52, 35);
+    padding: 4px 20px;
+    border-radius: 20px;
+<<<<<<< HEAD
+    border: none;
+=======
+>>>>>>> d8c3c2c72a46741cd637695a75784ba002d383c8
+    box-sizing: border-box;
+	margin: 40px 1% 0;
     font-size: 18px;
     height: 50px;
     outline: 0;
     padding: 4px 20px ;
     width: 100%;
 }
-
 .reg_button{
     font-family: 'MyFont';
     background: rgb(202, 52, 35);
@@ -47,4 +62,13 @@ s.reg_container{
     margin: 80px 1% 0;
     width: 48%;
     text-align: center;
+
+<<<<<<< HEAD
+}
+
+.error{
+    color:red;
+    margin-left:20px;
+=======
+>>>>>>> d8c3c2c72a46741cd637695a75784ba002d383c8
 }
