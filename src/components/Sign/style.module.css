@@ -1,0 +1,67 @@
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    background: url(../../assets/BG.jpg);
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.form{
+    background-color:#111;
+	color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height:auto ;
+    padding: 20px;
+    width: 36vw;
+    margin-top: 100px; 
+    position: absolute;
+}
+
+.placeholder{
+    left: 20px;
+    line-height: 14px;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200s, color 200ms;
+    top: 20px;
+}
+
+.input_container{
+    justify-content: space-around;
+}
+
+.input_string{
+    font-family: 'MyFont';
+    color: black;
+    background: rgb(202, 52, 35);
+    border-radius: 20px;
+    border: 0;
+    box-sizing: border-box;
+	margin: 40px 1% 0;
+    font-size: 18px;
+    height: 50px;
+    outline: 0;
+    padding: 4px 20px ;
+    width: 100%;
+}
+
+.input_button{
+    font-family: 'MyFont';
+    background: rgb(202, 52, 35);
+    border-radius: 20px;
+    border: 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin: 80px 1% 0;
+    width: 48%;
+    text-align: center;
+}
+
+.error{
+    color:red;
+    margin-left:20px;
+}

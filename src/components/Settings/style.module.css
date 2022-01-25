@@ -1,0 +1,30 @@
+
+@font-face {
+	font-family: 'MyFont';
+	src: url(../../fonts/Japanese_3017.ttf);
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    background: url(../../assets/BG.jpg);
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.settings{
+    font-family: 'MyFont';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#111;
+	color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 36vw;
+    height: 65vh;
+    margin-top: 100px; 
+    position: absolute;
+}

@@ -1,0 +1,86 @@
+
+@font-face {
+	font-family: 'MyFont';
+	src: url(../../fonts/Japanese_3017.ttf);
+}
+
+
+.wrapper{
+	font-family: 'MyFont';
+	min-height: 10vh;
+	display:flex;
+	flex-direction: column;
+	background: url(../../assets/BG.jpg);
+    background-size: cover;
+}
+
+.header_body{
+	background-color: #111;
+	color: white;
+	flex: 1 1 auto;
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	border-radius: 0 0 30px 30px;
+}
+
+.title{
+	font-size: 3.125em;
+	margin: 20px;
+}
+
+.header_nav{
+	margin: 0 0 0 auto;
+	display:flex;
+}
+
+
+.nav_item{
+	margin: auto;
+	max-width: 10vw;
+	max-height: 10vh;
+	text-align: center;
+}
+
+.nav_button_first{
+	border-radius: 20px 0 0 20px;
+	border: 1px solid grey;
+	border-radius: 10px, 0px, 0px, 10px;
+	background: rgb(202, 52, 35);
+	color: black;
+	padding: 12px;
+	margin: 0 0 0 auto;
+	text-transform: none;
+}
+
+.nav_button{
+	background: rgb(202, 52, 35);
+	color: black;
+	border: 1px solid grey;
+	padding: 12px;
+	text-transform: none;
+}
+
+
+.nav_button_last{
+	border-radius: 0 20px 20px 0;
+	margin-right: 20px;
+	background: rgb(202, 52, 35);
+	color: black;
+	border: 1px solid grey;
+	padding: 12px;
+	text-transform: none;
+}
+
+
+ .logo{
+	margin: auto 10px auto auto;
+	max-width: 10vw;
+	max-height: 10vh;
+ }
+
+.logo img{
+	width:100%;
+	max-width: 100%;
+}
+ 

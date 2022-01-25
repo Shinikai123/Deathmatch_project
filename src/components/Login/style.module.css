@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(../../fonts/Japanese_3017.ttf);
+}
+
+
+.wrapper{
+    color: white;
+    font-family: 'MyFont';
+    min-height: 90vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url(../../assets/BG.jpg);
+    background-size: cover;
+}
+
+.login_container{
+    justify-content: space-around;
+    
+}
+
+.login{
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    height: auto;
+    width: 36vw;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.login_button{
+    font-family: 'MyFont';
+    background: rgb(202, 52, 35);
+    border-radius: 20px;
+    border: 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin: 80px 1% 0;
+    width: 48%;
+    text-align: center;
+}
+
+.login_string{
+    color: black;
+    background: rgb(202, 52, 35);
+    padding: 4px 20px;
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+	margin: 40px 1% 0;
+    font-size: 18px;
+    height: 50px;
+    outline: 0;
+    padding: 4px 20px ;
+    width: 100%;
+}
+
+.error{
+    color:red;
+    margin-left:20px;
+}

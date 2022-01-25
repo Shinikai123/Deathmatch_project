@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(../../fonts/Japanese_3017.ttf);
+}
+
+.wrapper{
+    font-family: 'MyFont';
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: url(../../assets/BG.jpg);
+    background-size: cover;
+}
