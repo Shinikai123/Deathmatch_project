@@ -11,8 +11,8 @@ const Profile = () => {
   }
     return (
         <div className={s.wrapper}>
+            <div className={s.profile_container}>
             <div className={s.profile}>
-            <h1>Deathmatch tournament app</h1>
             <h1>Your profile information</h1>
             <form >
             <input type="hidden" />
@@ -24,6 +24,7 @@ const Profile = () => {
             <button onClick={handleClick} className={s.input_button}>Back</button>
             </form>
 
+            </div>
             </div>
         </div>
     );

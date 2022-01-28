@@ -34,6 +34,22 @@
 .gamelist_header {
     display: flex;
     justify-content:space-around;
+    background: rgb(202, 52, 35);
     width: 100%;
 
+}
+
+.game_button{
+    background: rgb(202, 52, 35);
+}
+
+.game_string{
+    background: rgb(202, 52, 35);
+}
+.admin_create_game{
+    background: rgb(202, 52, 35);
+}
+
+.admin_form_input{
+    background: rgb(202, 52, 35); 
 }

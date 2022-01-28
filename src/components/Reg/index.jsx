@@ -95,11 +95,7 @@ const blurHandler = (e) => {
     <div className={s.wrapper}>
       <div className={s.reg_container}>
         <div className={s.reg}>
-<<<<<<< HEAD
         <input onChange={e => nameHandler(e)}
-=======
-        <input
->>>>>>> d8c3c2c72a46741cd637695a75784ba002d383c8
           type="text"
           onBlur={e => blurHandler(e)}
           className={s.reg_string}
@@ -108,16 +104,12 @@ const blurHandler = (e) => {
           value={name}
           placeholder="Full Name"
         />
-<<<<<<< HEAD
         {(nameDirty && nameError) && <div className={s.error}>{nameError}</div>}
 
-=======
->>>>>>> d8c3c2c72a46741cd637695a75784ba002d383c8
           <select id="selectRole" class={s.reg_string} name="Role">
             <option value="Player">Player</option>
             <option value="Organizer">Organizer</option>
           </select>
-<<<<<<< HEAD
 
           <input onChange={e => emailHandler(e)}
            value={email}
@@ -135,31 +127,12 @@ const blurHandler = (e) => {
             onBlur ={e => blurHandler(e)}
             name='password'
             id="password"
-            type="password"
+            type="text"
             className={s.reg_string}
             placeholder="Password"
           />
            {(passwordDirty && passwordError) && <div className={s.error}>{passwordError}</div>}
            <button disabled={!formValid} type='submit' className={s.reg_button}  onClick={register}>Register</button>
-=======
-          <input
-            type="text"
-            className={s.reg_string}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="E-mail Address"
-          />
-          <input
-            type="password"
-            className={s.reg_string}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-          />
-          <button className={s.reg_button} onClick={register}>
-            Register
-          </button>
->>>>>>> d8c3c2c72a46741cd637695a75784ba002d383c8
           <button
             className={s.reg_button}
             onClick={signInWithGoogle}

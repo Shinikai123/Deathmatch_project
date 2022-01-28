@@ -5,7 +5,6 @@
 
 
 .wrapper{
-<<<<<<< HEAD
     color: white;
     font-family: 'MyFont';
     min-height: 90vh;
@@ -61,12 +60,4 @@
     margin: 80px 1% 0;
     width: 48%;
     text-align: center;
-=======
-    font-family: 'MyFont';
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    background: url(../../assets/BG.jpg);
-    background-size: cover;
->>>>>>> d8c3c2c72a46741cd637695a75784ba002d383c8
 }

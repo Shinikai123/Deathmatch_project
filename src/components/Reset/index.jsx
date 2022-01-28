@@ -15,7 +15,6 @@ function Reset() {
     if (user) navigate("/dashboard");
   }, [user, loading]);
   console.log(auth);
-<<<<<<< HEAD
 
   function handleClick() {
       navigate(-1)
@@ -24,11 +23,6 @@ function Reset() {
     <div className={s.wrapper}>
       <div className={s.reset_container}>
         <div className={s.reset}>
-=======
-  return (
-    <div className={s.wrapper}>
-      <div className={s.reset_container}>
->>>>>>> d8c3c2c72a46741cd637695a75784ba002d383c8
         <input
           type="text"
           className={s.reset_string}

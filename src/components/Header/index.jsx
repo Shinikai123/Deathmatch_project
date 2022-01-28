@@ -15,24 +15,17 @@ const Header = () => {
 					</div>
 
 
+
 					<div className={s.nav_item}>
 						<Link to={"/gamelist"} className={s.nav_button}>GAMELIST</Link>
 					</div>
 					
 
+
 					<div className={s.nav_item}>
 						<Link to={"/profile"} className={s.nav_button}>PROFILE</Link>
 					</div>
 					
-
-					<div className={s.nav_item}>
-						<Link to={"/organizer"} className={s.nav_button}>ORGANIZER</Link>
-					</div>
-					
-
-					<div className={s.nav_item}>
-						<Link to={"/settings"} className={s.nav_button}>SETTINGS</Link>
-					</div>
 					
 
 					<div className={s.nav_item}>

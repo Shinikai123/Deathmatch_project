@@ -64,7 +64,7 @@ const Organizer = () => {
                         <option value="rank3">master</option>
                     </select>
                     <label for="selectPlayerAmount">Players amount</label>
-                    <input onChange={e => playerHandler(e)} value={player} onBlur ={e => blurHandler(e)} name='player' className={s.input_string} id="player" type="text" placeholder="Enter players amount..."></input>
+                    <input onChange={e => playerHandler(e)} value={player} onClick ={blurHandler} name='player' className={s.input_string} id="player" type="text" placeholder="Enter players amount..."></input>
                     {(playerDirty && playerError) && <div className={s.error}>{playerError}</div>}
                     <button disabled={!formValid} type='submit' className={s.input_button}>Submit</button>
                     <button onClick={handleClick} className={s.input_button}>Back</button>

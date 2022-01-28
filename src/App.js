@@ -1,5 +1,7 @@
 import React from 'react';
-import {initializeApp} from 'firebase/app';
+///import * as yup from 'yup';
+///import { Formik  } from 'formik';
+///import {initializeApp} from 'firebase/app';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import Login from './components/Login';
@@ -8,9 +10,7 @@ import Reset from './components/Reset';
 import Gamelist from './components/Gamelist';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Organizer from './components/Organizer';
 import Profile from './components/Profile';
-import Settings from './components/Settings';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'; 
 import './App.css';
 
@@ -27,7 +27,6 @@ games: [
 			game_name: "game_name 1",
 			game_map: "map 1",
 			org_nickanme: "observer 1",
-			rank_req: "novice",
 			player_amount: 8,
 		},
 		
@@ -36,7 +35,6 @@ games: [
 			game_name: "game_name 2",
 			game_map: "map 2",
 			org_nickanme: "observer 2",
-			rank_req: "expert",
 			player_amount: 8,
 		},
 		
@@ -45,7 +43,6 @@ games: [
 			game_name: "game_name 3",
 			game_map: "map 3",
 			org_nickanme: "observer 3",
-			rank_req: "master",
 			player_amount: 8,
 		},
 		
@@ -54,26 +51,26 @@ users: [
 	{
 		name: "",
 		email: "",
-		rassword: "",
-		role: "",
+		password: "",
+		rank: "",
 	},
 	{
 		name: "",
 		email: "",
-		rassword: "",
-		role: "",
+		password: "",
+		rank: "",
 	},
 	{
 		name: "",
 		email: "",
-		rassword: "",
-		role: "",
+		password: "",
+		rank: "",
 	},
 	{
 		name: "",
 		email: "",
-		rassword: "",
-		role: "",
+		password: "",
+		rank: "",
 	},
 ],
 currentUser: {},
@@ -130,15 +127,57 @@ render() {
 <Router >
 <Header />
 <Routes>
-	<Route path="/" element={<Login users={this.state.users} currentUser={this.state.currentUser}  setCurrentUser={this.setCurrentUser}/>}></Route>
-	<Route path="/reg" element={<Reg users={this.state.users} addUser={this.addUser}/>}></Route>
-	<Route path="/reset" element={<Reset/>}></Route>
-	<Route path="/home" element={<Home/>}></Route>
-	<Route path="/dashboard" element={<Dashboard/>}></Route>
-	<Route path="/gamelist" element={<Gamelist games={this.state.games} addGame={this.addGame} deleteGame={this.deleteGame} editGame={this.editGame}/>}></Route>
-	<Route path="/organizer" element={<Organizer/>}></Route>
-	<Route path="/profile" element={<Profile currentUser={this.state.currentUser} editUser={this.editUser}/>}></Route>
-	<Route path="/settings" element={<Settings/>}></Route>
+	<Route path="/" 
+		element={
+		<Login
+			users={this.state.users}
+			currentUser={this.state.currentUser}
+			setCurrentUser={this.setCurrentUser}/>}>
+	</Route>
+
+	<Route path="/reg"
+		element={
+		<Reg
+			users={this.state.users}
+			addUser={this.addUser}/>}>
+	</Route>
+
+	<Route path="/reset"
+		element={
+		<Reset
+			currentUser={this.state.currentUser}
+		/>}>
+
+	</Route>
+
+	<Route path="/home"
+		element={
+		<Home/>}>
+
+	</Route>
+
+	<Route path="/dashboard"
+		element={
+		<Dashboard/>}>
+
+	</Route>
+	
+	<Route path="/gamelist"
+		element={
+		<Gamelist
+			games={this.state.games}
+			addGame={this.addGame}
+			deleteGame={this.deleteGame}
+			editGame={this.editGame}/>}>
+	</Route>
+
+	<Route path="/profile"
+		element={
+		<Profile
+			currentUser={this.state.currentUser}
+			editUser={this.editUser}/>}>
+	</Route>
+
 </Routes>
 <Footer />
 </Router >

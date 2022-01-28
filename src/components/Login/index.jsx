@@ -87,7 +87,6 @@ function Login() {
            value={password}
           onBlur ={e => blurHandler(e)}
           name='password'
-          id="password"
           type="password"
           className={s.login_string}
           placeholder="Password"

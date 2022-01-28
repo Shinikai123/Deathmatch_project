@@ -6,11 +6,17 @@
 
 
 .wrapper{
-    display: flex;
-    justify-content: space-around;
+    font-family: 'MyFont';
     min-height: 90vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
     background: url(../../assets/BG.jpg);
     background-size: cover;
+}
+
+.profile_container{
+    justify-content: space-around;
 }
 
 .profile{
@@ -26,7 +32,7 @@
     width: 36vw;
     height: 65vh;
     margin-top: 100px; 
-    position: absolute;
+
 }
 
 .input_string{
