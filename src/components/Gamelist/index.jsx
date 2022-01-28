@@ -87,7 +87,7 @@ class Gamelist extends React.Component {
                 className={s.admin_form_input}
                 onChange={this.handleOrg}
                 value={this.state.org} />
-            
+                
                 <input
                 type="text"
                 className={s.admin_form_input}

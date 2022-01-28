@@ -15,12 +15,10 @@ const Header = () => {
 					</div>
 
 
-
 					<div className={s.nav_item}>
 						<Link to={"/gamelist"} className={s.nav_button}>GAMELIST</Link>
 					</div>
 					
-
 
 					<div className={s.nav_item}>
 						<Link to={"/profile"} className={s.nav_button}>PROFILE</Link>
