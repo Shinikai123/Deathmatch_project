@@ -7,7 +7,7 @@ import Dashboard from './components/Dashboard';
 import Login from './components/Login';
 import Reg from './components/Reg';
 import Reset from './components/Reset';
-import Gamelist from './store/components/GameList';
+import Gamelist from './components/GameList';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Profile from './components/Profile';
